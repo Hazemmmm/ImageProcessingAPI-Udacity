@@ -1,6 +1,6 @@
-import { express } from 'express';
+import express from "express";
+import resizeImage, { readThumbnailFullPath } from "./controllers/imageProces";
 import validateParams from "./middleware/validateParams";
-
 
 const router = express();
 
