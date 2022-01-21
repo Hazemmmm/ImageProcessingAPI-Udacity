@@ -41,3 +41,15 @@ This project designs APIs for image processing that allows the user to visit a u
 ### PRETTIER
 
 - npm run prettier
+
+## HOW TO USE TEST
+
+The API offers one endpoint to access and resize images available in the `public/images/full` folder.
+
+The endpoint is `api/images` and requires three query params:
+
+| Query Param |                                     Value                                     |
+| ----------- | :---------------------------------------------------------------------------: |
+| filename    | the filename (without extension) of one of the images available in the folder |
+| height      |                        it should be a positive integer                        |
+| width       |                        it should be a positive integer                        |
