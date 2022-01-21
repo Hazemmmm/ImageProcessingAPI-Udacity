@@ -6,12 +6,9 @@ export const sharpResize = async (
   w: number | null
 ): Promise<Sharp> => {
   const buffer = `assets/full/${f}.jpg`;
-  console.log("buffer", buffer);
   const image = await sharp(buffer);
-  console.log("image", image);
-
   const resizeImage = await image.resize(w, h);
-  console.log("resizeImage", resizeImage);
+
   return resizeImage;
 };
 

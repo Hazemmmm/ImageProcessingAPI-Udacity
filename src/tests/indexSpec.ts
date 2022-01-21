@@ -5,6 +5,7 @@ const req = supertest(app);
 
 describe("Test API", () => {
 
+  
   it("it should return a message", async () => {
     const res = await req.get("/");
     expect(res.text).toBe(
@@ -16,5 +17,4 @@ describe("Test API", () => {
     const res = await req.get("/");
     expect(res.statusCode).toBe(200);
   });
-
 });

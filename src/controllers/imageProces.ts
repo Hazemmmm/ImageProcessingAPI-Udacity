@@ -26,6 +26,7 @@ const resizeImage = async (
       const response = await sharpResize(f, h, w);
       response.toFile(resizePath, (err: Error) => {
         if (err) {
+                   
           res.status(403).send({
             ok: "failed",
             message: err.message,
