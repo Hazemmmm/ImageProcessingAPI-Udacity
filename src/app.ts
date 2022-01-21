@@ -18,7 +18,6 @@ app.use(express.json({ type: "application/json" }));
 app.use(express.urlencoded({ extended: false }));
 
 app.use(router);
-app.use(errorHandler);
 
 app.get("/", (req: Request, res: Response): void => {
   res.send("Hello and welcome from Iamge Processing API Udacity Project");
@@ -27,3 +26,6 @@ app.get("/", (req: Request, res: Response): void => {
 app.listen(port, (): void => {
   console.log(`"Server is running on port ${port}`);
 });
+app.use(errorHandler);
+
+export default app;
