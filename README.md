@@ -28,6 +28,10 @@ This project designs APIs for image processing that allows the user to visit a u
 
 - npm run test
 
+## BUILD PROJECT
+
+- npm run build
+
 ## WELL-FORMATTED CODE
 
 ### LINTING
