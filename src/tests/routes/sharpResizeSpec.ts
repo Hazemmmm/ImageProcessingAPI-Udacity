@@ -12,4 +12,8 @@ describe("Sharp ResizeImage", () => {
       expect(err.message).toBeDefined();
     });
   });
+
+  it("it should be resolved Successfully!", async () => {
+    await expectAsync(sharpResize("ironman", 500, 500)).toBeResolved();
+  });
 });
